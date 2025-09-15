@@ -18,8 +18,11 @@ public class logicScript : MonoBehaviour
 
     private void Start()
     {
-        //bird.SetActive(false);
-        //playerScoreText.gameObject.SetActive(false);
+        // make sure that game over screen is not active
+        if (gameOverScreen.activeInHierarchy)
+        {
+            gameOverScreen.SetActive(false);
+        }   
     }
 
     public void addScore(int scoreToAdd)
@@ -30,11 +33,16 @@ public class logicScript : MonoBehaviour
 
     public void restartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Game");
     }
 
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+    }
+
+    public void goToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
