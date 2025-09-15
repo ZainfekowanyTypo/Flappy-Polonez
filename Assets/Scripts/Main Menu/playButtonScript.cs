@@ -10,13 +10,20 @@ public class playButtonScript : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    private void Start()
+    public void OpenSettings()
     {
-       
+
     }
 
-    private void Update()
+    public void QuitGame()
     {
-        
+        Application.Quit();
     }
+
+    /*
+    private void OnApplicationQuit()
+    {
+        //executed right after Application.Quit();
+    }
+    */
 }
