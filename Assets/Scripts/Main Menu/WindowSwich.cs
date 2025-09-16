@@ -23,4 +23,6 @@ public class WindowSwich : MonoBehaviour
         swindows[windowindex].SetActive(true);
     }
 
+    //s
+
 }
