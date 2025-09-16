@@ -9,7 +9,8 @@ public class pipeSpawnerScript : MonoBehaviour
     public float spawnRate = 100;
     public float yOffset = 10;
 
-private float timer = 0;
+    private float timer = 0;
+
 
     void Start()
     {

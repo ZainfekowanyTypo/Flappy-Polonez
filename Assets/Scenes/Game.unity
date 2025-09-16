@@ -1464,6 +1464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1231359156}
   - component: {fileID: 1231359155}
+  - component: {fileID: 1231359157}
   m_Layer: 0
   m_Name: PipeSpawnerPoint
   m_TagString: Untagged
@@ -1478,13 +1479,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231359154}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10a60a85c3c85d34f99782aeddee8555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
   pipe: {fileID: 4236205756453342628, guid: 3954cd0ffe9a8be47abfa3633099a14e, type: 3}
-  spawnRate: 5
+  spawnRate: 100
   yOffset: 10
 --- !u!4 &1231359156
 Transform:
@@ -1501,6 +1502,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1231359157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231359154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6432d3680608d7945ab206f3ad78d025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PipeSpawnerScript1
+  spawnBuildings:
+  - {fileID: 1660406887862077002, guid: 3954cd0ffe9a8be47abfa3633099a14e, type: 3}
+  spawnRate: 5
+  spawnPos: {fileID: 1231359156}
 --- !u!1 &1496781758
 GameObject:
   m_ObjectHideFlags: 0
