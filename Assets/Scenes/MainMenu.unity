@@ -553,8 +553,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -809,7 +809,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -1183,8 +1183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 597.7854, y: 337.50003}
-  m_SizeDelta: {x: 896.533, y: 1047.501}
+  m_AnchoredPosition: {x: 594.77, y: 358.81}
+  m_SizeDelta: {x: 858.43, y: 1004.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576399744
 MonoBehaviour:
@@ -1462,8 +1462,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484161082}
-  - {fileID: 1429118283}
   - {fileID: 576399743}
+  - {fileID: 1429118283}
   m_Father: {fileID: 51490770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -1786,7 +1786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993575373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1648849186}
+        m_TargetAssemblyTypeName: WindowSwich, Assembly-CSharp
+        m_MethodName: switchSettingsWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &993575373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,8 +2008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 597.7854, y: 337.50003}
-  m_SizeDelta: {x: 896.533, y: 1047.501}
+  m_AnchoredPosition: {x: 594.77, y: 358.81}
+  m_SizeDelta: {x: 858.43, y: 1004.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429118284
 MonoBehaviour:
@@ -2195,7 +2207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1580224546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1648849186}
+        m_TargetAssemblyTypeName: WindowSwich, Assembly-CSharp
+        m_MethodName: switchSettingsWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1580224546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2454,10 @@ MonoBehaviour:
   animator: {fileID: 915458201}
   slideToGeneral: {fileID: 7400000, guid: 2bdf456f831cf4b42bcfa2ad43e5e479, type: 2}
   slideToSettings: {fileID: 7400000, guid: 9c93a44ceb372b24fb76c7b2043c9833, type: 2}
+  swindows:
+  - {fileID: 1484161081}
+  - {fileID: 576399742}
+  - {fileID: 1429118282}
 --- !u!1 &1694990368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,7 +3066,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945716377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1648849186}
+        m_TargetAssemblyTypeName: WindowSwich, Assembly-CSharp
+        m_MethodName: switchSettingsWindow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1945716377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3161,8 +3201,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

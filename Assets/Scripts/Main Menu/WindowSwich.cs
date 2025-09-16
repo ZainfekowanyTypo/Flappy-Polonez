@@ -5,6 +5,8 @@ public class WindowSwich : MonoBehaviour
     public Animator animator;
     public AnimationClip slideToGeneral, slideToSettings;
 
+    public GameObject[] swindows;
+
     public void switchWindowToMainMenu()
     {
         animator.Play(slideToGeneral.name);
@@ -15,13 +17,10 @@ public class WindowSwich : MonoBehaviour
         animator.Play(slideToSettings.name);
     }
 
-    void Start()
+    public void switchSettingsWindow(int windowindex)
     {
-        
+        for (int i = 0; i < swindows.Length; i++) { swindows[i].SetActive(false); }
+        swindows[windowindex].SetActive(true);
     }
 
-    void Update()
-    {
-        
-    }
 }
